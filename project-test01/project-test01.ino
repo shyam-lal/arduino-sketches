@@ -44,7 +44,6 @@ void setup() {
         server.send(200, "text/html", html_home);
     });
 
-  server.on("/action_page", handleForm);
   server.on("/ledOn", ledOn);
   server.on("/ledOff", ledOff);
   server.begin();
